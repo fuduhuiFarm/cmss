@@ -36,6 +36,9 @@ public class AdminAction extends AdminBaseAction {
 		List<ArticleVo> articleList = articleService.getArticleListByStatus(0,
 				0, 0, 0, ArticleConstant.Status.display, 0, 10);
 		modelMap.put("articleList", articleList);
+		
+		String str="";
+		
 		return "system/index";
 	}
 
